@@ -1,0 +1,495 @@
+{%extends 'base.html' %}
+
+
+{%block title%} HOME
+{%endblock title%}
+{%block style%}
+ {% comment %} .carousel-item{
+  width: 2000px ;
+  height:600px;
+} {% endcomment %}
+.carousel-caption{
+  text-align:center;
+padding-top:50px;
+}
+*{
+  margin:0px;
+  padding:0px;
+}
+{% comment %} .container
+{
+  font-size:large;
+  float:left;
+} {% endcomment %}
+ .image{
+  float: right;
+  float:up;
+  top:1.3em;
+  right:0;
+  position:absolute;
+  
+}
+.image2{
+  float: left;
+  float:up;
+  top:-2px;
+  position:flex;
+}
+{% comment %} .image1{
+  float: right;
+  float:up;
+  top:3em;
+  right:0;
+  position:absolute;
+}  {% endcomment %}
+h1{
+    font-size:50px;
+    top:10.0em;
+    float:down;
+    
+}
+p{
+  text-align: justify;
+  font-size: 25px;
+  
+}
+.shape{
+  text-align: center;
+  background-color:#6CB4EE;
+{% comment %} float:right; {% endcomment %}
+  width:100%;
+  height: 300px;
+  {% comment %} position: absolute; {% endcomment %}
+  padding:0;
+  margin:0; 
+}
+body{
+  overflow-x:hidden;
+  margin:0px;
+  padding:0px;
+}
+{% comment %} .btn{
+  padding:30px;
+  width:auto;
+  margin:auto;
+  color:blue;
+  background-color: black;
+  position:center;
+} {% endcomment %}
+
+.image1{
+  float:right;
+}
+
+.community{
+   text-align:right;
+   padding-right:40px;
+}
+p.para{
+  text-align:right;
+}
+p.para1{
+  text-align:right;
+  padding-right:270px;
+}
+
+ h1.environment{
+  text-align:40px;
+  float : left;
+    display : block;
+    margin-left: 0px;
+    padding-left:100;
+
+} 
+p.para2{
+  text-align:left;
+  padding-left:100px;
+}
+p.para3{
+  text-align:left;
+  padding-left:100px;
+}
+p.para4{
+  text-align:left;
+  padding-left:100px;
+}
+h1.head1{
+  text-align:left;
+  padding-left:100px;
+}
+.image3{
+  float:right;
+  padding-right:100px;
+}
+h1.head2{
+  text-align:right;
+  padding-right:120px;
+}
+
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+background:#F0FFFF;
+position: relative;
+}
+.footer-cta {
+border-bottom: 1px solid #00008B;
+}
+.single-cta i {
+color: black;
+font-size: 30px;
+float: left;
+margin-top: 8px;
+}
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+.cta-text h4 {
+color: black;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+.cta-text span {
+color: #757575;
+font-size: 15px;
+}
+.footer-content {
+position: relative;
+z-index: 2;
+}
+.footer-pattern img {
+position: absolute;
+top: 0;
+left: 0;
+height: 330px;
+background-size: cover;
+background-position: 100% 100%;
+}
+.footer-logo {
+margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+margin-bottom: 14px;
+font-size: 14px;
+    color: #7e7e7e;
+line-height: 28px;
+}
+.footer-social-icon span {
+color: black;
+display: block;
+font-size: 20px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 20px;
+}
+.footer-social-icon a {
+color: black;
+font-size: 16px;
+margin-right: 15px;
+}
+.footer-social-icon i {
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 38px;
+border-radius: 50%;
+}
+.facebook-bg{
+background: #3B5998;
+}
+.twitter-bg{
+background: #55ACEE;
+}
+.google-bg{
+background: black;
+}
+.footer-widget-heading h3 {
+color: black;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 40px;
+position: relative;
+}
+.footer-widget-heading h3::before {
+content: "";
+position: absolute;
+left: 0;
+bottom: -15px;
+height: 2px;
+width: 50px;
+background: black;
+}
+.footer-widget ul li {
+display: inline-block;
+float: left;
+width: 50%;
+margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+color: black;
+}
+.footer-widget ul li a {
+color: #878787;
+text-transform: capitalize;
+}
+.subscribe-form {
+position: relative;
+overflow: hidden;
+}
+.subscribe-form input {
+width: 100%;
+padding: 14px 28px;
+background: #2E2E2E;
+border: 1px solid #2E2E2E;
+color:white;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: black;
+  padding: 13px 20px;
+  border: 1px solid black;
+  top: 0;
+}
+.subscribe-form button i {
+color:white;
+font-size: 22px;
+transform: rotate(-6deg);
+}
+.copyright-area{
+background:#6CB4EE;
+padding: 25px 0;
+}
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: black;
+}
+.copyright-text p a{
+color: save-our-planet-earth-illustration-to-green-environment-with-eco-friendly-concept-and-protection-from-natural-damage-vector;
+}
+.footer-menu li {
+display: inline-block;
+margin-left: 20px;
+}
+.footer-menu li:hover a{
+color: black;
+}
+.footer-menu li a {
+font-size: 14px;
+color: black;
+}
+{% endblock style%}
+
+
+
+{%block body%}
+ {% comment %} <div class="container-fluid px-0">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"> {% endcomment %}
+        
+        {% comment %} <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://media.istockphoto.com/photos/pharmacist-filling-prescription-of-pills-picture-id169978082?b=1&k=20&m=169978082&s=170667a&w=0&h=MpMhXGgmOzjwCCDVvtyduXMQiwuxzgzpA6Np-p2RpdI=" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1><b>It is Easy To Get a Thousand Prescription</b></h1>
+              <h1><b> But Hard To Get One Single Remedy</b></h1>
+            </div> {% endcomment %}
+          {% comment %} </div> {% endcomment %}
+           {% comment %} <div class="carousel-item">  {% endcomment %}
+             
+             
+            {% comment %} <div class="carousel-caption d-none d-md-block">
+              <h1><b>The Best And Most Efficient Pharmacy</b> </h1>
+              <h1><b>Is Within Your Own System.</b></h1>
+            </div>
+          </div> {% endcomment %}
+          
+          
+         
+          <div class="container">
+                   <h1> <b> Stop medication   </b><h1>
+                    <h1> <b> waste.Save lives.</b><h1></br>
+                      <p> Destruction of unused medication is not just</p> <p>wasteful, it’s also costly and harmful to the</p> <p>environment. Donate unused medications to help</p> <p>your community and benefit your organization.</p>
+            
+                      <div class="image">
+                    <img src="https://www.ypiprogram.com/uploads/2/3/7/0/2370799/published/19836.jpg?1564694934" width="700" height="600">
+                      </div></br></br></br></br></br>
+                    
+                   
+
+                     <div class="shape"></br>
+                      <h1><b> donate here!!!</b><h1>
+                        
+                        
+                        <div id="paypal-button-container"></div>
+
+                        <!-- Include the PayPal JavaScript SDK -->
+                        <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD&disable-funding=credit,card"></script>
+                    
+                        <script>
+                            // Render the PayPal button into #paypal-button-container
+                            paypal.Buttons({
+                    
+                                // Set up the transaction
+                                createOrder: function(data, actions) {
+                                    return actions.order.create({
+                                        purchase_units: [{
+                                            amount: {
+                                                value: '100'
+                                            }
+                                        }]
+                                    });
+                                },
+                    
+                                // Finalize the transaction
+                                onApprove: function(data, actions) {
+                                    return actions.order.capture().then(function(orderData) {
+                                        // Successful capture! For demo purposes:
+                                        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                                        var transaction = orderData.purchase_units[0].payments.captures[0];
+                                        alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
+                    
+                                        // Replace the above to show a success message within this page, e.g.
+                                        // const element = document.getElementById('paypal-button-container');
+                                        // element.innerHTML = '';
+                                        // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                                        // Or go to another URL:  actions.redirect('thank_you.html');
+                                    });
+                                }
+                    
+                    
+                            }).render('#paypal-button-container');
+                        </script>
+                        
+
+                      </div></br>
+                      {% comment %} <div  style="text-align:center"> 
+                        <a href="donate.html">
+                          <button type="button" class="btn">Click here to donate</button>
+                        </div> {% endcomment %}
+                
+                        <div class="image1">
+                          <img src="https://miro.medium.com/max/1200/1*4XRAX4obUOvMVqWibVCneQ.jpeg" width="300" height="300">
+                        </div>
+                      </div> 
+                      </br></br></br></br>
+
+            <div class="community">
+              <div class="image2">
+                <img src="https://img.freepik.com/free-vector/multicultural-people-standing-together_74855-6583.jpg" width="900" height="300">
+              </div></br></br>
+            
+              <h1 class ="head2"><b>Help Community</b></h1></br></br></br>
+             <p class="para">Expand your influence beyond your organization </p>
+             <p class="para1">and help others in need.</p>
+            </div>
+            
+           </div></br></br></br></br></br></br></br></br>
+        </div>
+         <div class="environment">
+          <div class="image3">
+            <img src="https://static.vecteezy.com/system/resources/previews/002/367/769/large_2x/save-our-planet-earth-illustration-to-green-environment-with-eco-friendly-concept-and-protection-from-natural-damage-vector.jpg" width="500" height="300">
+          </div>
+          <h1 class ="head1"><b>Help the environment</b></h1></br></br></br>
+          <p class="para2">Medication destruction pollutes    </p>
+          <p class="para3">waterways with pharmaceutical runoff,</p>
+          <p class="para4">and releases toxic dioxins into the air.</p>
+          
+         </div>
+
+         <footer class="footer-section">
+          <div class="container">
+              <div class="footer-cta pt-5 pb-5">
+                  <div class="row">
+                      <div class="col-xl-4 col-md-4 mb-30">
+                          <div class="single-cta">
+                              <i class="fas fa-map-marker-alt"></i>
+                              <div class="cta-text">
+                                <h3><i class="fa fa-map-marker"></i></h3>
+                                  <h4>Find us</h4>
+                                  <span>1010 Avenue, sw 54321,chandigarh</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-md-4 mb-30">
+                          <div class="single-cta">
+                            <i class="fa fa-mobile-phone" style="font-size:32px"></i>
+                              <!-- <i class="fas fa-phone"></i> -->
+                              <div class="cta-text">
+                                <!-- <i class="fa fa-mobile-phone"></i> -->
+                                
+                                  <h4>Call us</h4>
+                                  <span>98765432100</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-md-4 mb-30">
+                          <div class="single-cta">
+                              <!-- <i class="far fa-envelope-open"></i> -->
+                              <i class="fa fa-envelope" style="font-size:24px"></i>
+                              <div class="cta-text">
+                                
+                                  <h4>Mail us</h4>
+                                  <span>mail@info.com</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+                              <div class="footer-text">
+                                <div class="footer-widget">
+                                  <div class="footer-widget-heading">
+                                    <h3>About Us</h3>    
+                                    <p>We create possibilities for the connected world.</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>  
+                                    <ul>
+                                      <li><a href="#">Home</a></li>
+                                      <li><a href="#">Donor</a></li>
+                                      <li><a href="#">Receiver</a></li>
+                                   </ul>
+                                    </div>
+                                     <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Donor</a></li>
+                                        <li><a href="#">Receiver</a></li>
+                                     </ul>
+                                    </div>
+                                   </div>
+                                </div>
+                              </div>
+                          
+                              
+                              
+                              
+          <div class="copyright-area">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                          <div class="copyright-text">
+                              <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Pharmasource</a></p>
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </footer>
+       
+        
+{%endblock body%}

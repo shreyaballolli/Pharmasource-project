@@ -1,0 +1,190 @@
+{%extends 'base.html'%}
+
+{%block title%} 
+ABOUT Us
+{%endblock title%}
+{%block style%}
+    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+}
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	background-color: #a52a2a;
+	color:#fff;
+}
+.content-section .social{
+	margin: 40px 40px;
+}
+.content-section .social i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+	color:#3d3d3d;
+}
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
+}
+
+}   
+    
+    
+{% endblock style%}
+
+{%block body%} 
+<div class="section">
+    <div class="container">
+        <div class="content-section">
+            <div class="title">
+                
+            </div>
+            <div class="card">
+                
+                <div class="card-body">
+                  <h5 class="card-title"><b>ABOUT US</b></h5>
+                  <p class="card-text">
+                    A  medicine   donation   can   save   lives   and   ease   suffering   when well-coordinated   and managed. Good   donation   practices   may   provide   savings   in   development   support   budgets,enabling these resources to be used for other purposes. This “PHARMASOURCE” application acts as a bridge between a huge medicine donation community and NGOs. A non-governmental association (NGO) is a not-incomedriven association that is free from states and all-inclusive administrative associations. They are ordinarily financed by blessings yet some avoid formal sponsoring totally and are run essentially by volunteers.In last one- or two-years users of smartphones have rapidly increased and counting is still on. It becomes very convenient for users to use the android app.  As we know there are many existing  medicine donation portals, they are not up to the marks and requires more manual data handling . By using this technology we are able to overcome the problems and provide a very user-friendly application for users..
+                  </p>
+                 
+                </div>
+              </div>
+              <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>OBJECTIVES</b></h5>
+                <p class="card-text">
+                     OBJECTIVE OF PROJECT
+
+                     Pharmasource is a way to collect unused medicines for further utilization by NGOs. The main objective of proposed system is: 
+                    
+                    <li> To provide a direct bridge between donor and NGOs.</li>
+                    <li> To reduce the wastage of unused medicines.. </li>
+                    <li> To provide a user-friendly interface.</li>
+                    <li> To create a secured environment for the user interactions
+                         reduce manual data handling.</li>
+                    <li> To provide a platform for donors to donate medicines.</li>
+                    <li> To provide a platform for the needy to avail the required medicines.</li>
+                </p>
+               </div>
+            </div>
+
+
+            <div class="card">
+                
+                <div class="card-body">
+                  <h5 class="card-title"><b>CONTACT US</b></h5>
+                  <p class="card-text">
+                   <h5> Gmail-link : Pharmasource@gmail.com</h5>
+                   <h5> Locate-Us: SDMCET Dhavalgiri dharwad.</h5>
+                  </p>
+                 
+                </div>
+              </div>
+
+            {% comment %} <div class="content">
+                
+                <p>A  medicine   donation   can   save   lives   and   ease   suffering   when well-coordinated   and managed. Good   donation   practices   may   provide   savings   in   development   support   budgets,enabling these resources to be used for other purposes. This “PHARMASOURCE” application acts as a bridge between a huge medicine donation community and NGOs. A non-governmental association (NGO) is a not-incomedriven association that is free from states and all-inclusive administrative associations. They are ordinarily financed by blessings yet some avoid formal sponsoring totally and are run essentially by volunteers.In last one- or two-years users of smartphones have rapidly increased and counting is still on. It becomes very convenient for users to use the android app.  As we know there are many existing  medicine donation portals, they are not up to the marks and requires more manual data handling . By using this technology we are able to overcome the problems and provide a very user-friendly application for users..</p>
+                 {% endcomment %}
+            </div>
+            <div class="social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        {% comment %} <div class="image-section"> {% endcomment %}
+            {% comment %} <img src="image/img one.jpg"> {% endcomment %}
+        {% comment %} </div> {% endcomment %}
+    </div>
+</div>
+    
+
+
+{%endblock body%}
